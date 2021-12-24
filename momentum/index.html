@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="해야할 일을 적어서 관리할 수 있는 To do 리스트"
+    />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -20,7 +27,9 @@
     <div class="wrap">
       <!-- music player menu -->
       <div class="menu">
-        <span class="material-icons"> menu </span>
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
       </div>
 
       <!--login form-->
@@ -58,9 +67,6 @@
 
       <!-- music player-->
       <div class="player">
-        <div class="close">
-          <span class="material-icons"> close </span>
-        </div>
         <section>
           <div class="inner">
             <div class="circle big">
@@ -69,19 +75,13 @@
             <div class="music_title">Blizzards</div>
             <p class="music_desc">Lorem ipsum dolor sit amet.</p>
             <div class="controls">
-              <span class="material-icons pause"> pause </span>
+              <span class="material-icons prev"> skip_previous </span>
               <span class="material-icons play"> play_arrow </span>
-              <span class="material-icons stop"> stop </span>
-              <audio src="audio/Blizzards.mp3"></audio>
+              <span class="material-icons next"> skip_next </span>
+              <audio src="audio/Blizzards.mp3" muted></audio>
             </div>
           </div>
         </section>
-        <button class="prev">
-          <span class="material-icons"> arrow_back_ios_new </span>
-        </button>
-        <button class="next">
-          <span class="material-icons"> arrow_forward_ios </span>
-        </button>
       </div>
     </div>
     <script src="js/greeting.js"></script>

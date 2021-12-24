@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: initial;
 }
 .wrap {
   width: 100vw;
@@ -29,12 +30,31 @@ body {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
 }
+/* menu */
 .menu {
   position: absolute;
   top: 20px;
   left: 20px;
-  cursor: pointer;
+  z-index: 99;
 }
+.menu > div {
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+
+.bar1.change {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.bar2.change {
+  opacity: 0;
+}
+.bar3.change {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 /* weather */
 .weather {
   position: absolute;
@@ -103,11 +123,11 @@ body {
   font-family: 'BMJUA';
   font-size: 1.2em;
   text-align: center;
+  color: #fff;
   border: none;
   border-bottom: 1px solid #fff;
   background-color: transparent;
   outline: none;
-  text-align: center;
 }
 input::-webkit-input-placeholder {
   color: #fff;
@@ -183,6 +203,10 @@ input::-webkit-input-placeholder {
 }
 
 @media screen and (min-width: 769px) {
+  .menu {
+    top: 30px;
+    left: 30px;
+  }
   .weather {
     top: 30px;
     right: 30px;
@@ -226,7 +250,7 @@ input::-webkit-input-placeholder {
     text-align: center;
   }
   .todo_list {
-    width: 50%;
+    width: 40%;
     max-height: 350px;
   }
   .todo_list li {
