@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/music.css" />
+
+    <title>Momentum</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- music player menu -->
+      <div class="menu">
+        <span class="material-icons"> menu </span>
+      </div>
+
+      <!--login form-->
+      <form id="login_form" class="hide">
+        <label>Welcome, What is your name?</label>
+        <input type="text" maxlength="15" required />
+      </form>
+
+      <h2 class="clock hide">00:00:00</h2>
+
+      <h1 class="greeting hide"></h1>
+
+      <!--todo form-->
+      <form class="todo_form hide">
+        <input type="text" placeholder="What do yo do?" required />
+      </form>
+
+      <!--to do list-->
+      <ul class="todo_list hide"></ul>
+
+      <!-- quote-->
+      <div class="quote hide">
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- weather-->
+      <div class="weather hide">
+        <div class="text">
+          <span></span>
+          <span></span>
+        </div>
+        <img />
+      </div>
+
+      <!-- music player-->
+      <div class="player">
+        <div class="close">
+          <span class="material-icons"> close </span>
+        </div>
+        <section>
+          <div class="inner">
+            <div class="circle big">
+              <div class="circle small"></div>
+            </div>
+            <div class="music_title">Blizzards</div>
+            <p class="music_desc">Lorem ipsum dolor sit amet.</p>
+            <div class="controls">
+              <span class="material-icons pause"> pause </span>
+              <span class="material-icons play"> play_arrow </span>
+              <span class="material-icons stop"> stop </span>
+              <audio src="audio/Blizzards.mp3"></audio>
+            </div>
+          </div>
+        </section>
+        <button class="prev">
+          <span class="material-icons"> arrow_back_ios_new </span>
+        </button>
+        <button class="next">
+          <span class="material-icons"> arrow_forward_ios </span>
+        </button>
+      </div>
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/music.js"></script>
+  </body>
+</html>
